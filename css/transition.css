@@ -1,0 +1,14 @@
+
+.transition-2 {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 101;
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);  transition: 0.5s ease-out;
+  }
+  
+  .transition-2.is-active {
+    left: 0px;
+  }

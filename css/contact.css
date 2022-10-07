@@ -1,0 +1,196 @@
+@import url("./transition.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Fira Sans", sans-serif;
+
+}
+
+body {
+    background-color: #151419;
+}
+
+:root {
+    --color1: #bc2f7a;
+    --primary: #AF1E2D;
+    --light: #F3F3F3;
+    --grey: #060606;
+    --dark: #1E2240;
+}
+
+
+.contact {
+    padding: 5%;
+    padding-top: 75px;
+    color: white;
+
+}
+
+
+
+.contact .header_top {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+
+.contact .header_top h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.contact .header_top img {
+    transform: rotateZ(270deg);
+    cursor: pointer;
+}
+
+
+
+.contact .header_top h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 120px;
+    height: 2px;
+    display: inline-block;
+    background: #dee2e6;
+    margin: 4px 20px;
+}
+
+.container_contact{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 75px;
+    position: relative;
+}
+
+.container_contact .social_media{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container_contact .social_media .fas, .fab{
+    font-size: 3rem;
+}
+
+
+
+
+
+
+.form {
+    width: 650px;
+    height: 500px;
+    background-color: transparent;
+    /* background: #e6e6e6; */
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    /* margin: calc(50vh - 220px) auto; */
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative
+}
+
+h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: var(--light) ;
+    border-bottom: 3px solid #78788c
+}
+
+input {
+    color: white;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s;
+    border-bottom: 2px solid var(--color1)
+}
+textarea{
+    color: white;
+
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    background: none;
+    outline: none;
+    resize: none;
+    border:none;
+    border-bottom: 2px solid var(--color1);
+}
+
+input:focus {
+    border-bottom: 2px solid #78788c
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a
+}
+
+button {
+    float: right;
+    padding: 8px 12px;
+    margin: 25px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s
+}
+
+button:hover {
+    background: #78788c;
+    color: #fff
+}
+
+@media only screen and (max-width: 768PX) {
+
+
+    .container_contact {
+        display: flex;
+        flex-direction: column;
+    }
+    .container_contact .social_media{
+        display: flex;
+        flex-direction: row;
+    }
+    .contact .header_top h1::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 90px;
+        height: 2px;
+        display: inline-block;
+        background: #dee2e6;
+        margin: 4px 20px;
+    }
+  
+  }
