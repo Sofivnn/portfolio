@@ -15,9 +15,10 @@
 
 }
 
-body{
+body {
     background-color: #151419;
 }
+
 :root {
     --color1: #bc2f7a;
     --primary: #AF1E2D;
@@ -35,27 +36,27 @@ body{
 
 
 
-.education .header_top{
+.education .header_top {
     display: flex;
     text-align: center;
     justify-content: space-between;
     padding-bottom: 35px;
 }
 
-.education .header_top h1{
+.education .header_top h1 {
     font-size: 45px;
     text-transform: uppercase;
     position: relative;
 }
 
-.education  .header_top img{
+.education .header_top img {
     transform: rotateZ(270deg);
     cursor: pointer;
 }
 
 
 
-.education .header_top h1::after{
+.education .header_top h1::after {
     content: "";
     position: absolute;
     top: 50%;

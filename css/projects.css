@@ -15,9 +15,10 @@
 
 }
 
-body{
+body {
     background-color: #151419;
 }
+
 :root {
     --color1: #bc2f7a;
     --primary: #AF1E2D;
@@ -36,27 +37,27 @@ body{
     color: white;
 }
 
-.projects .header_top{
+.projects .header_top {
     display: flex;
     text-align: center;
     justify-content: space-between;
     padding-bottom: 45px;
 }
 
-.projects .header_top h1{
+.projects .header_top h1 {
     font-size: 45px;
     text-transform: uppercase;
     position: relative;
 }
 
-.projects  .header_top img{
+.projects .header_top img {
     transform: rotateZ(270deg);
     cursor: pointer;
 }
 
 
 
-.projects .header_top h1::after{
+.projects .header_top h1::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -68,12 +69,12 @@ body{
 }
 
 
-.list_projects{
+#list_projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     grid-gap: 1rem 1rem;
     gap: 2rem 2rem;
-    
+
 }
 
 /* .card_show .card{
@@ -123,10 +124,10 @@ body{
 /* ************************************* */
 
 
-.card{
+.card {
     color: #586069;
     background-color: #171E28;
-    border-bottom:#ef6eae 2px solid;
+    border-bottom: #ef6eae 2px solid;
     box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
     padding: 2rem;
     display: flex;
@@ -135,17 +136,19 @@ body{
 
 }
 
-.video img{
+.video img {
     height: 150px;
     width: 100%;
 }
 
-.card .top{
+.card .top {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.card .top i, h2{
+
+.card .top i,
+h2 {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 800;
@@ -153,13 +156,13 @@ body{
 
 }
 
-.card .middle p{
+.card .middle p {
     color: #F3F3F3;
     font-size: 20px;
 }
 
 
-.card .bottom span{
+.card .bottom span {
     color: white;
     font-size: 15px;
     text-transform: uppercase;
@@ -170,7 +173,7 @@ body{
 @media only screen and (max-width: 768PX) {
 
 
-   
+
     .projects .header_top h1::after {
         content: "";
         position: absolute;
@@ -181,5 +184,5 @@ body{
         background: #dee2e6;
         margin: 4px 20px;
     }
-  
-  }
+
+}

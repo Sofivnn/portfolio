@@ -31,7 +31,7 @@
     font-family: "Fira Sans", sans-serif;
 }
 
-body{
+body {
     background-color: #151419;
 }
 
@@ -43,21 +43,21 @@ body{
 }
 
 
-.about .header  .header_top{
+.about .header .header_top {
     display: flex;
     text-align: center;
     justify-content: space-between;
     padding-bottom: 45px;
 }
 
-.about  .header .header_top h1{
+.about .header .header_top h1 {
     font-size: 45px;
     text-transform: uppercase;
     position: relative;
 }
 
 
-.about  .header .header_top h1::after{
+.about .header .header_top h1::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -68,19 +68,19 @@ body{
     margin: 4px 20px;
 }
 
-.about  .header .header_top img{
+.about .header .header_top img {
     transform: rotateZ(270deg);
     cursor: pointer;
 }
 
 
 
-.about .header .header_text p{
+.about .header .header_text p {
     font-size: 20px;
     text-align: justify;
 }
 
-.language{
+.language {
     padding-top: 25px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -88,7 +88,7 @@ body{
 
 }
 
-.language .lang_square{
+.language .lang_square {
     background-color: transparent;
     border: 3px solid #a972cb;
     display: flex;
@@ -100,33 +100,34 @@ body{
 
 }
 
-.language .lang_square i{
+.language .lang_square i {
     font-size: 2rem;
 }
-.language .lang_square span{
+
+.language .lang_square span {
     font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.interest{
+.interest {
     padding-top: 45px;
 }
 
-.interest .header_top_interest{
+.interest .header_top_interest {
     display: flex;
     text-align: center;
     justify-content: space-between;
     padding-bottom: 45px;
 }
 
-.interest .header_top_interest h1{
+.interest .header_top_interest h1 {
     font-size: 40px;
     text-transform: uppercase;
     position: relative;
 }
 
-.interest .header_top_interest h1::after{
+.interest .header_top_interest h1::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -168,11 +169,11 @@ body{
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
-  
-  
-  }
 
-  @media only screen and (max-width: 420px) {
+
+}
+
+@media only screen and (max-width: 420px) {
 
     .language {
         padding-top: 25px;
@@ -180,6 +181,6 @@ body{
         grid-template-columns: repeat(1, 1fr);
         gap: 40px;
     }
-  
-  
-  }
+
+
+}

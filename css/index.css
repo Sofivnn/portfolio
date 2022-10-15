@@ -1,9 +1,6 @@
 /* Importation css file */
 @import url("./transition.css");
 
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +65,6 @@
 
   background-position: center;
  
-  /* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
   position: relative;
   transition: all 0.5s;
   display: flex;
